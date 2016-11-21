@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54434B41DE32E1100D156F6 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54434B31DE32E1100D156F6 /* SwiftViewController.swift */; };
 		D58B5B771DDE94C1000A3B66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D58B5B761DDE94C1000A3B66 /* main.m */; };
 		D58B5B7A1DDE94C1000A3B66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D58B5B791DDE94C1000A3B66 /* AppDelegate.m */; };
 		D58B5B7D1DDE94C1000A3B66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58B5B7C1DDE94C1000A3B66 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D54434B21DE32E1000D156F6 /* Thread_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thread_demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D54434B31DE32E1100D156F6 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		D58B5B721DDE94C1000A3B66 /* Thread_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thread_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58B5B761DDE94C1000A3B66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D58B5B781DDE94C1000A3B66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,11 +118,13 @@
 				D58B5BA91DDEC3BE000A3B66 /* GCDViewController.m */,
 				D58B5BAB1DDEC3D2000A3B66 /* NSOperationViewController.h */,
 				D58B5BAC1DDEC3D2000A3B66 /* NSOperationViewController.m */,
+				D54434B31DE32E1100D156F6 /* SwiftViewController.swift */,
 				D58B5B7E1DDE94C1000A3B66 /* Main.storyboard */,
 				D58B5B811DDE94C1000A3B66 /* Assets.xcassets */,
 				D58B5B831DDE94C1000A3B66 /* LaunchScreen.storyboard */,
 				D58B5B861DDE94C1000A3B66 /* Info.plist */,
 				D58B5B751DDE94C1000A3B66 /* Supporting Files */,
+				D54434B21DE32E1000D156F6 /* Thread_demo-Bridging-Header.h */,
 			);
 			path = Thread_demo;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				TargetAttributes = {
 					D58B5B711DDE94C0000A3B66 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					D58B5B8A1DDE94C1000A3B66 = {
@@ -283,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54434B41DE32E1100D156F6 /* SwiftViewController.swift in Sources */,
 				D58B5B7D1DDE94C1000A3B66 /* ViewController.m in Sources */,
 				D58B5BAD1DDEC3D2000A3B66 /* NSOperationViewController.m in Sources */,
 				D58B5B7A1DDE94C1000A3B66 /* AppDelegate.m in Sources */,
@@ -434,10 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Thread_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ash.Thread-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thread_demo/Thread_demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -445,16 +456,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Thread_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ash.Thread-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Thread_demo/Thread_demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D58B5BA31DDE94C1000A3B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Thread_demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -467,6 +482,7 @@
 		D58B5BA41DDE94C1000A3B66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Thread_demoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -479,6 +495,7 @@
 		D58B5BA61DDE94C1000A3B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Thread_demoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ash.Thread-demoUITests";
@@ -490,6 +507,7 @@
 		D58B5BA71DDE94C1000A3B66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Thread_demoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ash.Thread-demoUITests";
@@ -517,6 +535,7 @@
 				D58B5BA11DDE94C1000A3B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D58B5BA21DDE94C1000A3B66 /* Build configuration list for PBXNativeTarget "Thread_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +544,7 @@
 				D58B5BA41DDE94C1000A3B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D58B5BA51DDE94C1000A3B66 /* Build configuration list for PBXNativeTarget "Thread_demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +553,7 @@
 				D58B5BA71DDE94C1000A3B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

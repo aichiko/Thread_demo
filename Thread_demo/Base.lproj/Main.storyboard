@@ -21,6 +21,16 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-Il-XfB">
+                                <rect key="frame" x="131" y="548" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Swift"/>
+                                <connections>
+                                    <segue destination="0Oa-ji-92s" kind="show" id="Ams-0Q-vpX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="fec-OF-bE6">
@@ -40,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="458" y="202"/>
+            <point key="canvasLocation" x="456.80000000000001" y="201.94902548725639"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F7b-Z7-mJ2">
@@ -121,6 +131,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTS-GV-xai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1461.5999999999999" y="470.91454272863569"/>
+        </scene>
+        <!--Swift View Controller-->
+        <scene sceneID="f8w-5Z-ObA">
+            <objects>
+                <viewController id="0Oa-ji-92s" customClass="SwiftViewController" customModule="Thread_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEE-UW-81z"/>
+                        <viewControllerLayoutGuide type="bottom" id="AGs-NW-Zyk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Fe-ND-Dzy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4O-oM-x5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="242"/>
         </scene>
     </scenes>
 </document>

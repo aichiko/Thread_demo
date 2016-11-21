@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GCDViewController.h"
 #import "NSOperationViewController.h"
+#import "Thread_demo-Swift.h"//“项目名称-Swift.h” 可以调用swift方法
 
 @interface ViewController ()
 {
@@ -56,9 +57,7 @@
     [thread start];
     [thread_0 start];
     
-    
     //[self threadLock];
-    
 }
 
 - (void)threadLock {
